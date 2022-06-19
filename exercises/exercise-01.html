@@ -5,13 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dramas Coreanos</title>
+    <link rel="stylesheet" href="exercise-01.css">
 </head>
 <body>
     <h1>Dramas Coreanos</h1>
     
     <h2>Lista de los mejores dramas coreanos</h2>
-    <ul id="listaDrama"></ul>    
+    <ul id="listaDrama" ></ul>   
     
+    <h2>Esta lista contiene la información del archivo: dramas.json</h2>
+    <dl>
+        <dt><strong>Fetch</strong>
+        <dd>La API Fetch proporciona una interfaz JavaScript para 
+            acceder y manipular partes del canal HTTP, 
+            tales como <em>peticiones</em> y <em>respuestas</em>.            
+    
+        <dt><strong>fech()</strong>
+        <dd>fetch() toma un argumento (la ruta del recurso que quiere obtener) 
+            y devuelve un objeto Promise el cual contiene la respuesta, 
+            es decir, un objeto Response.
+    
+        <dt><strong>Peticiones HTTP con fetch </strong>
+        <dd>Fetch es una API para Javascript la cuál realiza 
+            peticiones HTTP asíncronas y utiliza promesas. 
+            Esta API, en comparación con las peticiones HTTP 
+            mediante XHR, es mucho más sencilla de aplicar. 
+            
+            Para realizar una petición utiliza fetch y le 
+            pasas por parámetro la URL de la petición a realizar:                
+    </dl>
+
+    <pre><code>
+    let mostrar = ""
+
+    fetch("/dramas.json")
+        .then(r => r.json())
+        .then(data => {
+            for (let i = 0; i < data.length; i++) {
+                if (data[i].genero.includes("Romance")) {
+                    mostrar += `<li>${data[i].drama} | año: ${data[i].year} | Genero: ${data[i].genero} </li>`
+                }
+            }
+            document.getElementById("listaDrama").innerHTML = mostrar
+        })
+    </code></pre>
+
+    <dl>
+        <dt><strong>Fuentes</strong>
+        <dd>
+        <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch#browser_compatibility" target="_blank">Uso de Fetch</a></li>
+            <li>
+                <a href="https://lenguajejs.com/javascript/peticiones-http/fetch/" target="_blank">Fetch: Peticiones Asíncronas
+                    | artículo de <a href="https://manz.dev/" target="_blank">J. Román (Manz)</a>
+                </a>
+            </li>
+        </ul>                       
+    </dl>
+
     <script src="exercise-01.js"></script>    
 </body>
 </html>
