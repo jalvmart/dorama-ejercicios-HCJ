@@ -2,18 +2,38 @@
 <html lang="es">
 
 <head>
-	<title>Exportar archivo JSON (codeR11)</title>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="exercise-02.css">
-	
+    <title>Exportar archivo JSON (codeR11)</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="exercise-02.css">
 </head>
 
 <body>
-	<div>Convertir Objeto a JSON:</div>
-	<div id="json"></div>
-	<button onclick="onDownload()">Download</button>
+    <header>
+        <nav class="navbar">
+            <a href="/index.html" class="nav-branding">CODER-{11}</a>
+            <ul class="nav-menu" id="menuJS">
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="sect01">
+                <div>Convertir Objeto a JSON:</div>
+                <code><pre id="json"></pre></code>
+                <button onclick="onDownload()">Download</button>
+            </div>
+        </div>
+    </section>
 
-	<script src="exercise-02.js"></script>
+    <script src="exercise-02.js"></script>
+    <script src="/menus/crearMenu.js"></script>
+    <script src="/menus/menuHamburger.js"></script>
 </body>
 
 </html>

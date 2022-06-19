@@ -1,17 +1,17 @@
-html, body {
+.section1{
     font-family: "Open Sans";
     font-size: 18px;
     padding: 10px 10px;
 }
 
-h1 {
+.section1 h1 {
     font-family: "Universe Extended";
     text-align: center;
 }
 
 /* spacing */
 
-table {
+.section1 table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
@@ -36,10 +36,6 @@ table {
   
   th, td {
     padding: 20px;
-  }
-
-  html {
-    font-family: 'helvetica neue', helvetica, arial, sans-serif;
   }
   
   thead th, tfoot th {

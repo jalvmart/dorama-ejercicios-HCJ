@@ -3,9 +3,22 @@
     margin: 20px 0;
     background: #eee;
 }
+
 button{
     background: rgb(8, 184, 96);
     color:#fff;
     border: none;
     padding:10px 20px;
 }
+
+pre { 
+    white-space: pre-wrap;
+    overflow-x: auto; 
+}
+
+pre {
+    font-size: 18px;    
+    background: black;
+    padding: 20 px 10px;
+}
+

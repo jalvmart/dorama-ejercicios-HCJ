@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,69 +11,98 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <a href="#" class="nav-branding">CODER-{11}</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/exercises/exercise-01.html" class="nav-link">Ejercicio 1</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/exercises/exercise-02.html" class="nav-link">Ejercicio 2</a>
-                </li>            
-                <li class="nav-item">
-                    <a href="/exercises/exercise-03.html" class="nav-link">Ejercicio 3</a>
-                </li>
-
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+        <div class="container">
+            <nav class="navbar">
+                <a href="/index.html" class="nav-branding">CODER-{11}</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/exercises/exercise-01.html" class="nav-link">Ejercicio 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/exercises/exercise-02.html" class="nav-link">Ejercicio 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/exercises/exercise-03.html" class="nav-link">Ejercicio 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/dorama/index.html" class="nav-link">Dorama</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="sect01">
+                <h1>Ejercicio: Top 10 de Dramas Coreanos</h1>
+                <p>
+                    <em>Repositorio:</em> <a href="https://github.com/jalvmart/dorama-ejercicios-HCJ"
+                        target="_blank">dorama:
+                        ejercicios HTML|CSS|JavaScript</a>
+                <p>
+                <p>Crear una lista que contenga, en tu opinión, los 10 mejores dramas de Corea del Sur.
+                <ol>
+                    <li>Crear una lista con HTML</li>
+                    <li>Crear una lista con un Array</li>
+                    <li>Crear una lista con un Objecto</li>
+                    <li>Crear una lista con JSON</li>
+                    <li>Acceder a un archivo JSON desde otro Servidor</li>
+                </ol>
             </div>
+        </div>    
+    </section>
+    <section>
+        <div class="container">
+            <div class="sect02">    
+                <h2>1. Lista creada desde un elemento HTML</h2>
+                <ul>
+                    <li>Recuerdos De La Alhambra</li>
+                    <li>Goblin: El solitario ser inmortal</li>
+                    <li>Aterrizaje de emergencia en tu corazón</li>
+                    <li>Start-up</li>
+                    <li>Mientras dormías</li>
+                    <li>El Amor es un Capítulo Aparte</li>
+                    <li>Está bien no estar bien</li>
+                    <li>Itaewon Class</li>
+                    <li>Flor del mal</li>
+                    <li>Malvado y loco</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">            
+            <div class="sect02">
+                <h2>2. Lista creada con un Array</h2>
+                <ol id="conArray"></ol>
 
-        </nav>
-    </header>    
-    <h1>Ejercicio: Top 10 de Dramas Coreanos</h1>
-    <p>
-        <em>Repositorio:</em> <a href="https://github.com/jalvmart/dorama-ejercicios-HCJ" target="_blank">dorama: ejercicios HTML|CSS|JavaScript</a>
-    <p>
-    <p>Crear una lista que contenga, en tu opinión, los 10 mejores dramas de Corea del Sur.
-    <ol>
-        <li>Crear una lista con HTML</li>
-        <li>Crear una lista con un Array</li>
-        <li>Crear una lista con un Objecto</li>
-        <li>Crear una lista con JSON</li>
-        <li>Acceder a un archivo JSON desde otro Servidor</li>
-    </ol>
-    
-    <h2>1. Lista creada desde un elemento HTML</h2>
-    <ul>
-        <li>Recuerdos De La Alhambra</li>
-        <li>Goblin: El solitario ser inmortal</li>
-        <li>Aterrizaje de emergencia en tu corazón</li>
-        <li>Start-up</li>
-        <li>Mientras dormías</li>
-        <li>El Amor es un Capítulo Aparte</li>
-        <li>Está bien no estar bien</li>
-        <li>Itaewon Class</li>
-        <li>Flor del mal</li>
-        <li>Malvado y loco</li>
-    </ul>
-    
-    <h2>2. Lista creada con un Array</h2>
-    <ol id="conArray"></ol>
+                <h2>3. Lista creada con un Objeto</h2>
+                <ol id="conObjet"></ol>
 
-    <h2>3. Lista creada con un Objeto</h2>
-    <ol id="conObjet"></ol>
+                <h2>4. Lista creada con un Archivo JSON local</h2>
+                <ol id="conJSON"></ol>
 
-    <h2>4. Lista creada con un Archivo JSON local</h2>
-    <ol id="conJSON"></ol>
-
-    <h2>5. Lista de un archivo JSON desde otro Servidor</h2>
-    <ul id="post"></ul>
+                <h2>5. Lista de un archivo JSON desde otro Servidor</h2>
+                <ul id="post"></ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="sect01">
+                <h2>Section 2</h2>
+                <p>Prueba con section 2</p>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
     <script src="menu.js"></script>

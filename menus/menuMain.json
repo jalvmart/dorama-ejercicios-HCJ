@@ -1,0 +1,22 @@
+[
+    {
+        "ref": "/index.html",
+        "titleMenu" : "Inicio"
+    },
+    {
+        "ref": "/exercises/exercise-01.html",
+        "titleMenu" : "Ejercicio 1"
+    },
+    {
+        "ref": "/exercises/exercise-02.html",
+        "titleMenu" : "Ejercicio 2"
+    },
+    {
+        "ref": "/exercises/exercise-03.html",
+        "titleMenu" : "Ejercicio 3"
+    },    
+    {
+        "ref": "/dorama/index.html",
+        "titleMenu" : "Dorama"
+    }
+]
